@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+            a{
+                text-decoration: none;
+            }
+            li{
+                 list-style-type: none;
+            }
+            #d1{
+                font-size: 18px;
+                height: 90px;
+                width: 300px;
+                transform: translate(1100px,-10px);
+            }
+			li{
+				display: inline-block;
+				padding: 45px 25px;
+			}
+			a{
+				text-decoration: none;
+				color: rgb(255, 3, 3);
+			}
+			li:hover{
+				background-color: rgb(37, 37, 63);
+			}
+			.d1{
+				display: none;
+				position: absolute;
+			}
+            .d2{
+				display: none;
+				position: absolute;
+			}
+			ul li:hover ul.d1{
+                height: 350px;
+                width: 175px;
+				display: block;
+				background-color: rgb(140, 169, 68);
+			}
+			.d1 li{
+				display: block;
+			}
+            ul li:hover ul.d2{
+				display: block;
+				background-color: rgb(117, 66, 125);
+			}
+			.d2 li{
+                color: white;    
+				display: block;     
+			}
+            body{
+				margin: 0px;
+				background-size: 100%;				
+				background-image: url(back1.avif);
+		    }
+            #d3{
+				margin-left: 520px;
+				margin-top: -75px;	
+			}
+			p{
+				text-align: center;     
+				margin-top: 300px;  
+				font-family: Bernard MT Condensed;  
+				font-size: 90px;    
+				font-weight: 5px;   
+				color: rgb(233, 6, 124);    
+			}	
+			input{
+				padding: 10px;
+				font-size: 30px;
+				color: rgb(217, 217, 226);
+				background-color: rgb(56, 40, 40);
+                }          
+    </style>
+</head> 
+<body>
+    <ul id="d1">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="">menu</a>
+            <ul class="d1">
+                <li><a href="/recipe/Paneer.html">> Paneer Curry</a></li>
+                <li><a href="/recipe/Chicken.html">> Chicken Curry</a></li>
+                <li><a href="/recipe/Mutton.html">> Mutton Curry</a></li>
+            </ul>
+        </li>
+        <li><a href="#">Contact</a>
+            <ul class="d2">
+                <li>9826171010</li>
+            </ul>
+        </li>
+    </ul>
+    <p>Welcome Here!</p>
+    <div id="d3">
+    <input type="button" name="b1" value="Learn More!!!">
+    <input type="button" name="b1" value="Explore More!!!">
+    </div>
+</body>
+</html>
